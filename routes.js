@@ -21,4 +21,8 @@ router.post('/dashboard/addplaylist', dashboard.addPlaylist);
 router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
 router.post('/playlist/:id/updatesong/:songid', playlist.updateSong);
+router.get('/searchCategory', dashboard.createView);
+router.get('/sortData', dashboard.createView);
+
+
 export default router;
