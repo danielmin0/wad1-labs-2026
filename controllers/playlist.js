@@ -29,14 +29,13 @@ const playlist = {
     response.redirect('/playlist/' + playlistId);
   },
 
-  deleteSong(request, response) {
+deleteSong(request, response) {
     const playlistId = request.params.id;
     const songId = request.params.songid;
     logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
     playlistStore.removeSong(playlistId, songId);
     response.redirect('/playlist/' + playlistId);
 },
-
 };
 
 export default playlist;
