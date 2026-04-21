@@ -1,5 +1,6 @@
 'use strict';
 
+import stats from './controllers/stats.js';
 import express from 'express';
 const router = express.Router();
 import logger from "./utils/logger.js";
